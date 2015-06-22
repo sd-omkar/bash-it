@@ -6,7 +6,7 @@ alias sl=ls
 alias ls='ls -G'        # Compact view, show colors
 alias la='ls -AF'       # Compact view, show hidden
 alias ll='ls -al'
-alias l='ls -a'
+alias l='ls'
 alias l1='ls -1'
 
 alias _="sudo"
@@ -26,6 +26,10 @@ alias k='clear'
 alias cls='clear'
 
 alias edit="$EDITOR"
+
+export PAGER=/usr/local/bin/vimpager
+alias less=$PAGER
+alias zless=$PAGER
 alias pager="$PAGER"
 
 alias q='exit'
