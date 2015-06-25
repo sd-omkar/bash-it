@@ -46,7 +46,7 @@ alias ..='cd ..'         # Go up one directory
 alias ...='cd ../..'     # Go up two directories
 alias ....='cd ../../..' # Go up three directories
 alias -- -='cd -'        # Go back
-alias cdc="cd '$(git rev-parse --show-toplevel)'"
+alias cdc='cd "$(git rev-parse --show-toplevel)"'
 
 # Shell History
 alias h='history'
