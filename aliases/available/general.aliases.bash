@@ -28,9 +28,9 @@ alias cls='clear'
 alias edit="$EDITOR"
 
 export PAGER=/usr/local/bin/vimpager
-alias less=$PAGER
-alias zless=$PAGER
 alias pager="$PAGER"
+#alias less=$PAGER
+#alias zless=$PAGER
 
 alias q='exit'
 
@@ -46,6 +46,7 @@ alias ..='cd ..'         # Go up one directory
 alias ...='cd ../..'     # Go up two directories
 alias ....='cd ../../..' # Go up three directories
 alias -- -='cd -'        # Go back
+alias cdc="cd '$(git rev-parse --show-toplevel)'"
 
 # Shell History
 alias h='history'
