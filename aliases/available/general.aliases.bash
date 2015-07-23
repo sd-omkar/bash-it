@@ -27,7 +27,7 @@ alias cls='clear'
 
 alias edit="$EDITOR"
 
-export PAGER=/usr/local/bin/vimpager
+export PAGER="/usr/bin/most -s"
 alias pager="$PAGER"
 #alias less=$PAGER
 #alias zless=$PAGER
