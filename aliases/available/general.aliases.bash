@@ -60,3 +60,8 @@ fi
 # Directory
 alias	md='mkdir -p'
 alias	rd='rmdir'
+
+# Lab ssh
+labssh() {
+  ssh 192.168.$1
+}
