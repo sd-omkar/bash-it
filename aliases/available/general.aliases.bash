@@ -63,5 +63,9 @@ alias	rd='rmdir'
 
 # Lab ssh
 labssh() {
-  ssh 192.168.$1
+  if [[ $1 == *"."* ]]; then
+    ssh 192.168.$1
+  else
+    ssh 192.168.15.$1
+  fi
 }
