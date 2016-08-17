@@ -69,3 +69,20 @@ labssh() {
     ssh 192.168.15.$1
   fi
 }
+
+# For python autocomplete
+# import rlcompleter, readline
+# readline.parse_and_bind('tab:complete')
+export PYTHONSTARTUP=/home/odeshmukh/pyenv.py
+
+# venv wrapper aliases
+alias v='workon'
+alias v.deactivate='deactivate'
+alias v.mk='mkvirtualenv'
+alias v.rm='rmvirtualenv'
+alias v.switch='workon'
+alias v.add2virtualenv='add2virtualenv'
+alias v.cdsitepackages='cdsitepackages'
+alias v.cd='cdvirtualenv'
+alias v.lssitepackages='lssitepackages'
+
